@@ -3,7 +3,7 @@ apply plugin: 'eclipse'
 
 
 task wrapper(type: Wrapper) {
-    gradleVersion = "3.5"
+    gradleVersion = "4.2"
 }
 
 targetCompatibility = 1.8
@@ -21,6 +21,9 @@ subprojects {
 
     repositories {
         mavenCentral()
-        maven{ url { 'http://maven.springframework.org/snapshots/' }}
+        maven{ url { 'http://repo.springsource.org/libs-release/' }}
+        maven{ url { 'http://repo.springsource.org/libs-milestone/' }}
+        maven{ url { 'http://repo.springsource.org/libs-snapshot/' }}
     }
 }
+
