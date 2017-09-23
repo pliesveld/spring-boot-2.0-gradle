@@ -32,7 +32,6 @@ subprojects {
     targetCompatibility = 1.8
     sourceCompatibility = 1.8
 
-
     checkstyle {
         sourceSets = Collections.singletonList(sourceSets.main)
         configFile = rootProject.file('config/checkstyle/checkstyle.xml')
