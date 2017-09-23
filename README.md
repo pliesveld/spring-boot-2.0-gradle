@@ -3,9 +3,9 @@ Spring Boot tutorial with gradle
 Usage
 ===
 
-./gradlew build
+./gradlew clean bootJar
 
-./gradlew bootRun
+java -jar HelloService/build/libs/HelloService.jar 
 
 navigate to http://localhost:8080/greeting
 
